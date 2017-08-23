@@ -11,7 +11,7 @@ function compile(str, path) {
     .set('filename', path)
     .use(nib())
 }
-app.set('views', __dirname + '/views')
+app.set('views', __dirname + '/layouts')
 app.set('view engine', 'jade')
 app.use(express.logger('dev'))
 app.use(stylus.middleware(
