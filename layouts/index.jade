@@ -2,7 +2,18 @@ extend layout
 block append styles
 
     link(rel='stylesheet', href='/stylesheets/style.css')   
-  
+    
+block sidebar
+  .sidebar
+    p
+    b Twitter Feed
+  .widget
+    h1 Widget
+    p
+      b I need to add something to this widget
+      | 
+    p
+
 block content
 
   p
@@ -20,12 +31,3 @@ block content
   
   p
     | This template is being build by Jade - Suck My Dick
-
-
-block .rightSidebar
-  .widget
-    h1 Widget
-    p
-      b I need to add something to this widget
-      | 
-    p

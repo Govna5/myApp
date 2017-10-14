@@ -2,18 +2,10 @@ doctype
 html
   head
     title #{title} - My Site
-    link(rel='stylesheet', href='/stylesheets/style.css')  
-  body
-    header
-      h1 Govna LLC
-    .container
-      .main-content
-        block content
-      .sidebar
-        block sidebar
-    footer
-      p Running on node with Express, Jade and Stylus
-      navBar
+      link(rel='stylesheet', href='/stylesheets/style.css')  
+  header
+    h1 Govna LLC
+  navBar
         block navBar
           div.container
                       ul.col-md-12.row
@@ -23,4 +15,17 @@ html
                             li.col-md-3 Fuck Off
                           a(href="#") 
                             li.col-md-3 Contact Me
-      
+  body
+  sidebar
+    .containerRight
+      block containerRight
+      .sidebar
+        block sidebar
+      .container
+        .styles 
+          block styles
+        .main-content
+          block content
+      footer
+        p Running on node with Express, Jade and Stylus
+        

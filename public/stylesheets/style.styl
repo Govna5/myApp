@@ -21,25 +21,30 @@ global-reset()
 main-color = #fa5b4d
 background-color = #faf9f0
 
-body
-  font-family 'Georgia'
-  background-color background-color
-  color #444
+//Settings for the containers of the web page
 
-header
+header 
   font-family 'Helvetica'
-  padding 10px 10px
+  padding 15px 5px
   color #fff
   font-size 25px
   text-align center
 
   navBar
+    navbar-fixted
     font-family 'Helvetica'
     padding 5px 5px
-    color #fff
-    font-size 5px
-    text-align center
+    color #fffc
+    font-size 15px
+    text-align Left
 
+  sidebar
+    font-family 'Helvetica'
+    padding 15px 10px
+    color #fff
+    font-size 13px
+    text-align center
+      
   /*
    * Note the use of the `main-color`
    * variable and the `darken` function
@@ -48,8 +53,18 @@ header
   border-bottom 1px solid darken(main-color, 30%)
   text-shadow 0px -1px 0px darken(main-color, 30%)
 
+  
+  body
+    font-family 'Georgia'
+    background-color background-color
+    color #444
+
+
+//Body of the webpage
+
+
 .container
-  width 900px
+  width 1000px
   margin 50px auto
   overflow hidden
 
@@ -60,10 +75,18 @@ header
   p
     margin-bottom 10px
     margin-top 20px
-
+  
 .sidebar
-  float left
-  width 200px
+    float right
+    border-radius 3px
+    border 2px 
+    width 185px
+    margin-left 5px
+    margin-top 5px 
+    overflow hidden
+    font-size 12px
+    text-align center
+    
 
   .widget
 
@@ -74,7 +97,7 @@ header
      */
     border-radius 3px
     border 1px solid #ccc
-    margin-left 10px
+    margin-left 0px
     background-color background-color
     box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
 
@@ -88,41 +111,11 @@ header
 
     p
       font-size 13px
-      padding 0px 20px
+      padding 5px 5px
       margin-bottom 10px
 
 p
   line-height 1.8
-
-  .widget1
-
-    /*
-     * Note the lack of vendor
-     * prefixes here. Nib will
-     * add them for us
-     */
-    border-radius 3px
-    border 1px solid #ccc
-    margin-left 10px
-    background-color background-color
-    box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
-
-    h1
-      font-family 'Quicksand'
-      margin 13px 10px 4px
-      padding-bottom 10px
-      border-bottom 1px dotted #ddd
-      border-radius 2px 2px 0px 0px
-      margin-bottom 10px
-
-    p
-      font-size 12px
-      padding 0px 10px
-      margin-bottom 10px
-
-  p
-  line-height 1.5
-
 
 footer
   max-width 1070px
